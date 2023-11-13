@@ -91,7 +91,7 @@ header ul.menu-right li.menu-cta a{
 }
 
 #intro .intro-left h1{
-    font-size: 2.5em;
+    font-size: 28px;
     color: #241b57;
     line-height: 1.5em;
     position: relative;
@@ -135,7 +135,7 @@ header ul.menu-right li.menu-cta a{
 }
 
 #intro .intro-right img{
-    max-width: 600px;
+    max-width: 300px;
 }
 
 #intro .top-right-gradient{

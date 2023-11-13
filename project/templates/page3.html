@@ -1,0 +1,271 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page1_style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page3_add.css') }}">
+    
+    <title>FASTBreak | Chat</title>
+  </head>
+  <body>
+    <div class="area">
+        <div class="wrapper">
+            <div class="container">
+                <div class="left">
+                    <div class="top">
+                        <input type="text" placeholder="Search" />
+                        <a href="javascript:;" class="search"></a>
+                    </div>
+                    <ul class="people">
+                        <li class="person" data-chat="person1">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/thomas.jpg" alt="" />
+                            <span class="name">Anthony Norris</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">Yo what time is our game?</span>
+                        </li>
+                        <li class="person" data-chat="person2">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/dog.png" alt="" />
+                            <span class="name">Dog Woofson</span>
+                            <span class="time">1:44 PM</span>
+                            <span class="preview">Where are you?</span>
+                        </li>
+                        <li class="person" data-chat="person3">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/louis-ck.jpeg" alt="" />
+                            <span class="name">Coach Lou</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">Practice Plan 11/13/23</span>
+                        </li>
+                        <li class="person" data-chat="person4">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/bo-jackson.jpg" alt="" />
+                            <span class="name">Coach Bo</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">Don't worry about it</span>
+                        </li>
+                        <li class="person" data-chat="person5">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/michael-jordan.jpg" alt="" />
+                            <span class="name">Michael Jordan</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">Wassup</span>
+                        </li>
+                        <li class="person" data-chat="person6">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/382994/drake.jpg" alt="" />
+                            <span class="name">Drake</span>
+                            <span class="time">2:09 PM</span>
+                            <span class="preview">Heyyyyyyyy...</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="top"><span>To: <span class="name">Dog Woofson</span></span></div>
+                    <div class="chat" data-chat="person1">
+                        <div class="conversation-start">
+                            <span>Today, 6:48 AM</span>
+                        </div>
+                        <div class="bubble me">
+                            Yo what time is our game?
+                        </div>
+                        <div class="bubble you">
+                            It's at 7:30 tonight
+                        </div>
+                        <div class="bubble me">
+                            Cool, thanks
+                        </div>
+                    </div>
+                    <div class="chat" data-chat="person2">
+                        <div class="conversation-start">
+                            <span>Today, 5:38 PM</span>
+                        </div>
+                        <div class="bubble me">
+                            Where are you?
+                        </div>
+                        <div class="bubble you">
+                            I'm in California dreaming
+                        </div>
+                        <div class="bubble me">
+                            ... about who we used to be.
+                        </div>
+                        <div class="bubble me">
+                            Are you serious?
+                        </div>
+                        <div class="bubble you">
+                            Nah lol I'm at a CYL meeting
+                        </div>
+                        <div class="bubble you">
+                            I told Coach I wouldn't be at practice today
+                        </div>
+                        <div class="bubble me">
+                            oh, see you tomorrow
+                        </div>
+                    </div>
+                    <div class="chat" data-chat="person3">
+                        <div class="conversation-start">
+                            <span>Today, 3:38 AM</span>
+                        </div>
+                        <div class="bubble me">
+                            Practice Plan 11/13/23<br>(some kind of plan)
+                        </div>
+                        <div class="bubble you">
+                            COOL
+                        </div>
+                        <div class="bubble me">
+                            I LOVE PRACTICE
+                        </div>
+                    </div>
+                    <div class="chat" data-chat="person4">
+                        <div class="conversation-start">
+                            <span>Yesterday, 4:20 PM</span>
+                        </div>
+                        <div class="bubble me">
+                            WHERE ARE YOU
+                        </div>
+                        <div class="bubble me">
+                            I need you to be at practice today.
+                        </div>
+                        <div class="bubble me">
+                            We are working on the new play
+                        </div>
+                        <div class="bubble you">
+                            Don't worry Coach, I'll be there
+                        </div>
+                        <div class="bubble me">
+                            Perfect
+                        </div>
+                    </div>
+                    <div class="chat" data-chat="person5">
+                        <div class="conversation-start">
+                            <span>Today, 6:28 AM</span>
+                        </div>
+                        <div class="bubble you">
+                            Wassup
+                        </div>
+                        <div class="bubble you">
+                            Wassup
+                        </div>
+                        <div class="bubble you">
+                            Wassup
+                        </div>
+        
+                    </div>
+                    <div class="chat" data-chat="person6">
+                        <div class="conversation-start">
+                            <span>Monday, 1:27 PM</span>
+                        </div>
+                        <div class="bubble me">
+                            Heyyyyyyyy
+                        </div>
+                        <div class="bubble me">
+                            Would you like to join my (totally serious) tournament this weekend?
+                        </div>
+                        <div class="bubble me">
+                            There will be free food!
+                        </div>
+                        <div class="bubble you">
+                            No thanks, I have to go see my grandparents
+                        </div>
+                        <div class="bubble me">
+                            oh, have fun
+                        </div>
+                    </div>
+                    <div class="write">
+                        <a href="javascript:;" class="write-link attach"></a>
+                        <input type="text" />
+                        <a href="javascript:;" class="write-link smiley"></a>
+                        <a href="javascript:;" class="write-link send"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='page3_script.js') }}"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </div>
+    <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="/page1" onclick="showTab('tab1')">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                           Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="/page2" onclick="showTab('tab2')">
+                        <i class="fa fa-globe fa-2x"></i>
+                        <span class="nav-text">
+                            Change Accounts
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="/page3">
+                       <i class="fa fa-comments fa-2x"></i>
+                        <span class="nav-text">
+                            Chat
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="/page4">
+                       <i class="fa fa-camera-retro fa-2x"></i>
+                        <span class="nav-text">
+                            Weather
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="/page5">
+                        <i class="fa fa-film fa-2x"></i>
+                        <span class="nav-text">
+                            Hydration
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/page6">
+                        <i class="fa fa-book fa-2x"></i>
+                        <span class="nav-text">
+                           Calendar
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="/page7">
+                       <i class="fa fa-cogs fa-2x"></i>
+                        <span class="nav-text">
+                            Tools
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="/page8">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            test
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/page9">
+                       <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Documentation
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="/">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+  </body>
+    </html>
